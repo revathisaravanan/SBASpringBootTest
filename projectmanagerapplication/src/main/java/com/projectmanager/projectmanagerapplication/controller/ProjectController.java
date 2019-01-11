@@ -38,7 +38,7 @@ public class ProjectController {
         this.projectService = projectService;
     }
 
-   /* @RequestMapping(method = RequestMethod.POST)
+   @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createProject(@RequestBody ProjectData projectData) {
         ResponseEntity<?> responseEntity;
         try {
@@ -125,7 +125,7 @@ public class ProjectController {
             LOGGER.debug("Exception while updating Project in Database");
         }
         return responseEntity;
-    }*/
+    }
     
     private Project updateProjectFromProjectData(ProjectData projectData) {
         LOGGER.debug("ProjectController - updateProjectFromProjectData() Starts");
