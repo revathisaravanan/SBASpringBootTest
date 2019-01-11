@@ -97,7 +97,7 @@ public class TaskController {
         return taskDataList;
     }
 
-    @RequestMapping(value="parentTask", method = RequestMethod.GET)
+    /*@RequestMapping(value="parentTask", method = RequestMethod.GET)
     public List<ParentTaskData> getParentTaskList() {
         
         List<ParentTaskData> parentTaskDataList = new ArrayList<ParentTaskData>(); 
@@ -120,7 +120,7 @@ public class TaskController {
             LOGGER.debug("Exception while fetching parent task list from Database");
         }
         return parentTaskDataList;
-    }
+    }*/
 
     @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updateTask(@RequestBody TaskData taskData) {
