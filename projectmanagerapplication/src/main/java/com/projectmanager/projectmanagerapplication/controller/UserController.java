@@ -29,7 +29,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @RequestMapping(method = RequestMethod.POST)
+    /*@RequestMapping(method = RequestMethod.POST)
     public ResponseEntity<?> createUser(@RequestBody UserData userData) {
         ResponseEntity<?> responseEntity;
         try {
@@ -44,7 +44,7 @@ public class UserController {
             responseEntity = new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         return responseEntity;
-    }
+    }*/
 
     @RequestMapping(method = RequestMethod.GET)
     public List<UserData> getUserList() {
@@ -73,7 +73,7 @@ public class UserController {
         return userDataList;
     }
 
-    @RequestMapping(method = RequestMethod.DELETE, path={"/{id}"})
+   /* @RequestMapping(method = RequestMethod.DELETE, path={"/{id}"})
     public ResponseEntity<?> deleteUser(@PathVariable("id") int id) {
         ResponseEntity<?> responseEntity;
         try {
@@ -88,7 +88,7 @@ public class UserController {
             responseEntity = new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         return responseEntity;
-    }
+    }*/
 
     @RequestMapping(method = RequestMethod.PUT)
     public ResponseEntity<?> updateUser(@RequestBody UserData userData) {
